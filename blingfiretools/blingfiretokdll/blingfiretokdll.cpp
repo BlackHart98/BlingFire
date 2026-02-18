@@ -1,3 +1,10 @@
+#include <algorithm>
+#include <vector>
+#include <string>
+#include <sstream>
+#include <mutex>
+#include <assert.h>
+
 #include "FAConfig.h"
 #include "FALimits.h"
 #include "FAUtf8Utils.h"
@@ -1743,3 +1750,4 @@ int IdsToText (void* ModelPtr, const int32_t * pIdsArr, const int IdsCount, char
     // return the actual length of the output (the minimum length needed to keep entire output)
     return ActualLength;
 }
+
